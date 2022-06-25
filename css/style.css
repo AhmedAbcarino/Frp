@@ -58,6 +58,17 @@ header .container img {
     -o-transition: var(--main-duration);
 }
 
+header .imgs img { 
+    border-radius: 50%;
+    width: 40px;
+}
+
+@media (min-width: 768px) {
+    header .imgs img {
+        display: none;
+     }
+}
+
 header .container h1 {
     font-size: 25px;
     color: #333;
@@ -103,6 +114,12 @@ header .container h1 {
     width: 300px;
     padding-bottom: 20px;
     display: block;
+    transition: .6s;
+}
+
+.landing .imgs img:hover {
+    transform: scale(1.05);
+    filter: grayscale(100%);
 }
 
 @media (max-width: 787px) {
